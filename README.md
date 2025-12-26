@@ -1,4 +1,4 @@
-# ![Arc logo](https://upload.wikimedia.org/wikipedia/commons/3/37/Arc_%28browser%29_logo.svg) Arc Migration Exporter
+# <img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Arc_%28browser%29_logo.svg" alt="Arc logo" width="24" height="24"> Arc Migration Exporter
 
 Arc is **pretty**. Migrating off it is… **not**.
 
