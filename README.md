@@ -1,8 +1,10 @@
 # <img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Arc_%28browser%29_logo.svg" alt="Arc logo" width="24" height="24"> Arc Migration Exporter
 
-Arc is **pretty**. Migrating off it is… **not**.
+While Arc may be pretty, migrating off it is… not :(
 
-This script helps you escape by exporting your **Spaces**, **folders**, and **tabs** into a classic **Netscape bookmarks HTML** file that **Firefox-** or **Chromium-based** browsers can import ✅
+I’ve been daily-driving Arc for a while, but it’s no longer being meaningfully developed beyond routine Chromium build updates, so I’m finally switching browsers.
+
+This script helps me (and you) escape by exporting your **Spaces, folders, and tabs** into a classic Netscape bookmarks HTML file that **Firefox- or Chromium-based** browsers can import ✅
 
 ## ✅ Requirements
 
