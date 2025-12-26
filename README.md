@@ -1,39 +1,41 @@
-# Arc Migration Exporter
+# 🚀 Arc Migration Exporter
 
-Export Arc Browser Spaces, folders, and tabs to a Netscape-style bookmarks HTML file that can be imported into Firefox, Edge, Zen, and Chrome.
+Arc is **pretty**. Migrating off it is… **not**.
 
-## Requirements
+This script helps you escape by exporting your **Spaces**, **folders**, and **tabs** into a classic **Netscape bookmarks HTML** file that **Firefox-** or **Chromium-based** browsers can import ✅
+
+## ✅ Requirements
 
 - Python 3.10+
 - Local access to Arc's `StorableSidebar.json` (read-only)
 
-## Usage
+## ⚡ Usage
 
-### Default auto-detection
+### 🔍 Default auto-detection
 
 ```bash
 python3 arc_export.py --output arc_bookmarks.html
 ```
 
-### Specify input path
+### 🧭 Specify input path
 
 ```bash
 python3 arc_export.py --input "/path/to/StorableSidebar.json" --output arc_bookmarks.html
 ```
 
-### Export all containers and include unpinned spaces
+### 🧩 Export all containers and include unpinned spaces
 
 ```bash
 python3 arc_export.py --all-containers --include-unpinned --output arc_bookmarks.html
 ```
 
-### Verbose diagnostics
+### 🧾 Verbose diagnostics
 
 ```bash
 python3 arc_export.py --verbose
 ```
 
-## Where Arc stores sidebar data
+## 📁 Where Arc stores sidebar data
 
 - macOS (common path):
   `~/Library/Application Support/Arc/StorableSidebar.json`
@@ -42,13 +44,19 @@ python3 arc_export.py --verbose
 
 If auto-detection fails, locate `StorableSidebar.json` manually and pass it with `--input`.
 
-## Importing the HTML file
+## 📥 Importing the HTML file
 
-- Firefox / Zen: Library -> Bookmarks -> Manage Bookmarks -> Import and Backup -> Import Bookmarks from HTML
-- Chrome: Settings -> Import bookmarks and settings (or Bookmarks manager -> Import)
-- Edge: Settings -> Profiles -> Import browser data -> Import from file
+- Firefox-based: Library -> Bookmarks -> Manage Bookmarks -> Import and Backup -> Import Bookmarks from HTML
+- Chromium-based: Bookmarks manager -> Import (or Settings -> Import bookmarks)
 
-## Tests
+## ✨ What it exports
+
+- 🗂️ **Spaces** (as top-level folders when possible)
+- 📁 **Folders / tab groups** (best-effort, keeps structure)
+- 🔗 **Tab titles + URLs**
+- 📄 Outputs **one** `bookmarks.html` you can import anywhere
+
+## 🧪 Tests
 
 ```bash
 python3 -m unittest test_arc_export.py
